@@ -1,4 +1,4 @@
 vendor/
 .env*
 .phpunit.result.cache
-clover.xml
+coverage.xml
