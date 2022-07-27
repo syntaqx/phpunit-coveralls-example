@@ -15,12 +15,12 @@
         </include>
         <report>
             <clover outputFile="coverage/clover.xml" />
-            <cobertura outputFile="coverage/cobertura.xml" />
-            <crap4j outputFile="coverage/crap4j.xml" threshold="50" />
-            <html outputDirectory="coverage/html" lowUpperBound="50" highLowerBound="90" />
-            <php outputFile="coverage/coverage.php" />
-            <text outputFile="coverage/coverage.txt" showUncoveredFiles="false" showOnlySummary="true" />
-            <xml outputDirectory="coverage/xml" />
+            <!-- <cobertura outputFile="coverage/cobertura.xml" /> -->
+            <!-- <crap4j outputFile="coverage/crap4j.xml" threshold="50" /> -->
+            <!-- <php outputFile="coverage/coverage.php" /> -->
+            <!-- <text outputFile="coverage/coverage.txt" showUncoveredFiles="false" showOnlySummary="true" /> -->
+            <!-- <html outputDirectory="coverage/html" lowUpperBound="50" highLowerBound="90" /> -->
+            <!-- <xml outputDirectory="coverage/xml" /> -->
         </report>
     </coverage>
 </phpunit>
