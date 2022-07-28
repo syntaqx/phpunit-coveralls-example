@@ -8,13 +8,21 @@ use PHPUnit\Framework\TestCase;
 class ExampleTest extends TestCase
 {
     /**
+     * @return void
+     */
+    public function setUp(): void
+    {
+        $this->example = new Example();
+    }
+
+    /**
      * A basic test example.
      *
      * @return void
      */
     public function testSimpleReturnTrue(): void
     {
-        $obj = new Example();
-        $this->assertTrue($obj->simpleReturnTrue());
+        $response = $this->example->simpleReturnTrue();
+        $this->assertTrue($response);
     }
 }
