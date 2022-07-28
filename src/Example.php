@@ -9,7 +9,7 @@ class Example
      *
      * @return bool
      */
-    public function simpleReturnTrue()
+    public function simpleReturnTrue(): bool
     {
         return true;
     }
