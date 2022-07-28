@@ -1,18 +1,15 @@
 <?php declare (strict_types = 1);
+
+namespace Tests\Unit;
+
+use Example\Example;
 use PHPUnit\Framework\TestCase;
 
-final class StackTest extends TestCase
+final class ExampleTest extends TestCase
 {
-    public function testPushAndPop(): void
+    public function testSimpleReturnTrue(): void
     {
-        $stack = [];
-        $this->assertSame(0, count($stack));
-
-        array_push($stack, 'foo');
-        $this->assertSame('foo', $stack[count($stack) - 1]);
-        $this->assertSame(1, count($stack));
-
-        $this->assertSame('foo', array_pop($stack));
-        $this->assertSame(0, count($stack));
+        $obj = new Example();
+        $this->assertTrue($obj->simpleReturnTrue());
     }
 }
